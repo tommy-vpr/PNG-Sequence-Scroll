@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'roboto', sans-serif;
+  }
+
+  header{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+    z-index: 100;
+}
+header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: white;
+
+}
+header.active .logo,
+header.active ul li a{
+    color: black;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    margin-right:40px ;
+}
+header ul li{
+    margin: 0px 14px;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .logo{
+    font-size: 40px;
+    color: white;
+
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+  .section-test {
+    background: aqua;
+    width: 100%;
+  }
+
+  .section-test img {
+    width: 100%;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100vh;
+    object-fit: scale-down;
+  }
+
+  .lottie-section {
+    height: 1100vh;
+    width: 100%;
+    background: #fff;
+    position: relative;
+  }
+  
+  .lottie-container {
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .div-text-scroll {
+    height: 100vh;
+    padding: 0 clamp(4rem, 12vw, 20rem);
+    display: grid;
+    place-content: center;
+}
+
+.box {
+  position: fixed;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+  width: 100px;
+  height: 100px;
+  background: orange;
+  transform: scale(0);
+}
+
+.gradient {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  height: 200vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 20%
+  );
+  color: white;display: flex;flex-direction: column; gap: 
+        3em ;align-items: center;justify-content: center;
+  z-index: 1;
+}
+
+.g-reveal-point {
+  font-size: 3em;
+}
+
+.g-reveal-text {
+  max-width: 50%;
+}
+
+.div-text-scroll p {
+  font-size: clamp(1.8rem, 4.5vw, 8rem);
+  font-weight: bold;
+  color: #000;
+}
+
+  .lottie {
+    display: block;
+    height: 100vh;
+    width: 100%;
+  } 
+
+  .webcontent {
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+  }
